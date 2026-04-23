@@ -1,4 +1,4 @@
-"""ProteinDesign Bench 后端 — Flask + SQLite."""
+"""CGT Agent benchmark 后端 — Flask + SQLite."""
 import argparse
 import json
 import os
@@ -66,14 +66,11 @@ def static_proxy(path):
 @app.get("/api/meta")
 def meta():
     return jsonify({
-        "difficulties": ["L1", "L2", "L3", "L4", "L5"],
+        "difficulties": ["L1", "L2", "L3", "L4"],
         "domains": [
-            "蛋白质序列设计",
-            "蛋白质结构预测与建模",
-            "蛋白质功能改造与设计",
-            "蛋白质-配体相互作用设计",
-            "多蛋白复合物与系统设计",
-            "AI辅助蛋白质设计方法",
+            "递送系统 C1",
+            "基因治疗 C2",
+            "细胞工程 C3",
         ],
         "source_types": ["原创", "文献改编", "教材改编", "数据库条目改编"],
         "revision_reasons": PRESET_REVISION_REASONS,

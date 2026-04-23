@@ -1,16 +1,16 @@
-/* ProteinDesign Bench — runtime CSS without build step */
+/* CGT Agent benchmark — runtime CSS without build step */
 
 :root {
-    --primary: #1e40af;
-    --primary-hover: #1d4ed8;
-    --primary-light: #dbeafe;
-    --accent: #14b8a6;
-    --border: #cbd5e1;
-    --border-soft: #e2e8f0;
-    --text: #1e293b;
-    --text-soft: #64748b;
-    --surface: #ffffff;
-    --surface-soft: #f8fafc;
+    --primary: #0f4cba;
+    --primary-hover: #1d63d8;
+    --primary-light: #d8e7ff;
+    --accent: #38bdf8;
+    --border: #bfd4f3;
+    --border-soft: #dbeafe;
+    --text: #10243e;
+    --text-soft: #4b6485;
+    --surface: rgba(255, 255, 255, 0.94);
+    --surface-soft: #f4f9ff;
     --danger: #dc2626;
     --danger-bg: #fef2f2;
     --success: #059669;
@@ -23,6 +23,11 @@
 
 body {
     font-family: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(59, 130, 246, 0.14), transparent 24%),
+        linear-gradient(180deg, #eef6ff 0%, #dcecff 100%);
+    background-attachment: fixed;
 }
 
 a {
@@ -239,8 +244,7 @@ a {
 .badge-diff-L1 { background: #e0f2fe; color: #0369a1; }
 .badge-diff-L2 { background: #cffafe; color: #0f766e; }
 .badge-diff-L3 { background: #e0e7ff; color: #4338ca; }
-.badge-diff-L4 { background: #ede9fe; color: #6d28d9; }
-.badge-diff-L5 { background: #fae8ff; color: #a21caf; }
+.badge-diff-L4 { background: #dbeafe; color: #1d4ed8; }
 
 .card {
     background: var(--surface);
@@ -346,7 +350,7 @@ a {
     align-items: end;
     padding: 1rem;
     margin-bottom: 1rem;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
     border: 1px solid var(--border-soft);
     border-radius: 1rem;
     box-shadow: var(--shadow-sm);
@@ -375,13 +379,13 @@ a {
 
 .review-panel {
     border-left: 1px solid var(--border-soft);
-    background: linear-gradient(180deg, #f8fafc, #fff);
+    background: linear-gradient(180deg, #edf5ff, #ffffff);
 }
 
 .stat-card {
     padding: 1rem 1.125rem;
     border-radius: 1rem;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
     border: 1px solid var(--border-soft);
     box-shadow: var(--shadow-sm);
 }
@@ -403,7 +407,7 @@ a {
 .detail-block {
     padding: 1rem 1.125rem;
     border-radius: 1rem;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
     border: 1px solid var(--border-soft);
 }
 

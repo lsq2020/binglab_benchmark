@@ -29,7 +29,7 @@ def to_json_bytes(questions: list, role: str) -> bytes:
 
 
 def to_markdown_bytes(questions: list, role: str) -> bytes:
-    lines = ["# ProteinDesign Bench 题库导出", ""]
+    lines = ["# CGT Agent benchmark 题库导出", ""]
     lines.append(f"导出时间: {datetime.now(timezone.utc).isoformat(timespec='seconds')}  ")
     lines.append(f"导出数量: {len(questions)}  ")
     lines.append(f"导出身份: {'审核员(全量)' if role == 'reviewer' else '出题人(公开字段)'}")

@@ -200,7 +200,7 @@ async function refreshActiveTab() {
 
 function defaultQuestionForm() {
     return {
-        title: "",
+        title: "rAAV 表达盒的结构设计与元件优选",
         difficulty: "L2",
         domain: DOMAINS[0],
         subdomain: "",
@@ -321,10 +321,10 @@ function renderSubmitTab() {
                     <div class="detail-block">
                         <div class="section-title mb-4">题目信息</div>
                         <div class="form-grid two">
-                            ${fieldInput("title", "题目标题", form.title, "例如：人源 COX-2 选择性抑制剂结合口袋关键设计位点检索", true)}
+                            ${fieldInput("title", "题目标题", form.title, "提示：rAAV 表达盒的结构设计与元件优选", true)}
                             ${fieldSelect("difficulty", "难度等级", DIFFICULTIES.map((it) => ({ value: it.value, label: it.label })), form.difficulty, true)}
                             ${fieldSelect("domain", "领域大类", DOMAINS.map((it) => ({ value: it, label: it })), form.domain, true)}
-                            ${fieldInput("subdomain", "领域小类", form.subdomain, "例如：酶底物特异性改造", false)}
+                            ${fieldInput("subdomain", "领域小类", form.subdomain, "例如：AAV载体设计 / CAR-T / 体内递送", false)}
                         </div>
                         <div class="mt-4">
                             ${fieldTextarea("content", "题目正文", form.content, "完整描述题目、子问题、作答要求、溯源要求", true, 7)}
